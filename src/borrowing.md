@@ -1,6 +1,6 @@
 # Borrowing and Ownership
 
-In Kotlin a variable exists, and is available, while it’s in scope. 
+In Kotlin a variable is available while it’s in scope. 
 
 A global static variable is always available but a variable created in a method (unless returned) only exists during that instance of the methods execution. 
 
