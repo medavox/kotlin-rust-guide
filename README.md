@@ -1,6 +1,6 @@
 # A guide to Rust for Kotlin developers
 
-This is book comparing the differences and similarities between Kotlin and Rust, it also has a few useful tips and links.
+A is book comparing the differences and similarities between Kotlin and Rust; it also has a few useful tips and links.
 
 View at <https://emmabritton.github.io/kotlin-rust-guide>
 
