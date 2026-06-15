@@ -18,7 +18,7 @@
 
 - [Borrowing and Ownership](./borrowing.md)
 
-- [Classes, or the lack there of](./classes.md)
+- [Classes, or the lack thereof](./classes.md)
   - [Deriving and implementing](./classes_deriving.md)
   - [Default](./classes_default.md)
 
