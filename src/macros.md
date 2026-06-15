@@ -2,6 +2,8 @@
 
 Rust uses macros a lot as they provide ways to shorten code, and provide variadic and optional parameters, and also overloaded methods. Macros are invoked by the macro name then an exclamation mark, i.e. `example!`.
 
+Macros don't exist in Kotlin; the nearest equivalent might be Kotlin Symbol Processing.
+
 Macros can be used like functions `example!()` but anything can follow the exclamation mark as macros are very powerful, for example:
 
 ```rust,ignore
@@ -23,7 +25,7 @@ struct Foo {
 
 The annotation macros will generate code for Structs like in Kotlin.
 
-Macros can generate Rust code at compile time or run and return a result at runtime like a method. 
+Macros can generate Rust code at compile time or run and return a result at runtime like a function/method. 
 
-Most programs don't need their own macros but will often use ones from std or crates.
+Most programs don't need their own macros but will often use ones from `std` or crates.
 
