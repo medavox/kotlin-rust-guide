@@ -24,13 +24,13 @@ Rust uses a prefix followed by the bit size to create a number type (e.g. i32 me
 
 Floating points are 32 and 64 bit only, but integers can be 8, 16, 32, 64, and 128 bits.
 
-There are also two architecture dependent sizes: `isize` and `usize`. These are whatever the pointer size is for the CPU (for most new computers and phones that is 64 bits). 
+There are also two architecture dependent sizes: `isize` and `usize`. 
+
+These are whatever the pointer size is for the CPU (for most new computers and phones that is 64 bits). 
 
 As an example the equivalent to a Kotlin `Int` is `i32`, and a `Double` is `f64`. 
 
 `usize` is important as it's the primary number type: it's used in array, list and string formatting indexing and lengths/sizes of objects.
-
-It's an unsigned integer; the `size` part means it's 64 bits wide on a 64-bit machine, and 32 bits wide on a 32 bit machine.
 
 Suffixes for literals exist in Rust like in Kotlin; but in Rust there are suffixes for all primitives and they are the name of type, e.g. `3_i32` or `10.3f32`.
 
