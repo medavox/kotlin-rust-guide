@@ -1,11 +1,11 @@
-# Classes, or the lack there of
+# Classes, or the lack thereof
 
-In Kotlin has Classes, Abstract Classes, Interfaces, and extension methods. Rust has Traits, Structs, and Impls. 
+Kotlin has Classes, Abstract Classes, Interfaces, and extension methods. Rust has Traits, Structs, and Impls. 
 
 #### Kotlin
-* An interface can have methods but can not have variables with values, and may extend another Interface. It can be supplemented with extension methods or sub classed by other Classes, Abstract Classes or Interfaces.
-* A class can have variables and methods, and may extend a Class, an Abstract Class and/or Interface(s). It can be supplemented with extension methods or sub classed by other Classes or Abstract Classes.
-* An abstract class can have variables and methods, and may extend a Class, an Abstract Class and/or Interface(s). It can be supplemented with extension methods or sub classed by other Classes or Abstract Classes.
+* An interface can have methods but can not have variables with values, and may extend another Interface. It can be supplemented with extension methods or subclassed by other classes, abstract classes or interfaces.
+* A class can have variables and methods, and may extend a class, an abstract class and/or interface(s). It can be supplemented with extension methods or subclassed by other classes or abstract classes.
+* An abstract class can have variables and methods, and may extend a class, an abstract class and/or interface(s). It can be supplemented with extension methods or subclassed by other Classes or Abstract Classes.
 
 #### Rust
 * A trait is like an interface, it defines a list of methods that must be implemented. It can extend other traits, although this is rare.
