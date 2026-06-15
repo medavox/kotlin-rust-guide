@@ -12,7 +12,7 @@ In Kotlin there are few commonly used primitive types:
 | Char | 16 | UTF-16 Character |
 | Boolean | N/A | Boolean |
 
-In Kotlin the Integer types are signed but there unsigned versions, i.e UByte.
+In Kotlin the Integer types are signed but there are also unsigned versions, i.e UByte.
 
 Rust uses a prefix followed by the bit size to create a number type (e.g. i32 meaning a 32 bit signed integer), these are the prefixes:
 
@@ -22,16 +22,27 @@ Rust uses a prefix followed by the bit size to create a number type (e.g. i32 me
 | u | Unsigned Integer |
 | f | Floating Point |
 
-Floating points are 32 and 64 bit only but integers can be 8, 16, 32, 64, and 128 bits; there are also two architecture dependent sizes: `isize` and `usize` these are whatever the pointer size is for the CPU (for most new computers and phones that is 64 bits). 
-As an example the equivalent to a Kotlin `Int` is `i32` and a `Double` is `f64`. 
+Floating points are 32 and 64 bit only, but integers can be 8, 16, 32, 64, and 128 bits.
+
+There are also two architecture dependent sizes: `isize` and `usize`. These are whatever the pointer size is for the CPU (for most new computers and phones that is 64 bits). 
+
+As an example the equivalent to a Kotlin `Int` is `i32`, and a `Double` is `f64`. 
 
 `usize` is important as it's the primary number type: it's used in array, list and string formatting indexing and lengths/sizes of objects.
 
-Suffixes for literals exist in Rust like in Kotlin but rather being for some types, suffixes exist for all primitives and they are the name of type, e.g. `3_i32` or `10.3f32`, the suffixes are only necessary if the compiler can not infer the type or if you want to specify it; also floating point numbers can be written without the 0, e.g. `1.`
+It's an unsigned integer; the `size` part means it's 64 bits wide on a 64-bit machine, and 32 bits wide on a 32 bit machine.
+
+Suffixes for literals exist in Rust like in Kotlin; but in Rust there are suffixes for all primitives and they are the name of type, e.g. `3_i32` or `10.3f32`.
+
+The suffixes are only necessary if the compiler can not infer the type, or if you want to specify it.
+
+Floating point numbers can be written without the 0, e.g. `1.`
 
 Booleans are the same in both languages except it's `bool` instead of `Boolean`.
 
 Characters are different though, `char` in Rust is 4 bytes and can represent any Unicode scalar value. If you need to do text manipulation and need to handle any character outside of ASCII you will probably need to use these crates:
+
+Strings are more complicated in Rust than in Kotlin; we'll cover them in more detail later but for now, all you need to know is that there are two string types: `String` and `str`.
 
 | Name | Description | 
 | - | - |
