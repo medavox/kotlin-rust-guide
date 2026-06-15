@@ -1,6 +1,6 @@
 # Error Handling
 
-Rust has a generic error interface: `std::error::Error`, it's optionally may have a source error and/or backtrace. Instead of exceptions and try..catch the follow is used:
+Rust has a generic error interface: `std::error::Error`, it can have a source error and/or backtrace. Instead of exceptions and `try..catch`, the following is used:
 
 **Kotlin**
 ```kotlin
